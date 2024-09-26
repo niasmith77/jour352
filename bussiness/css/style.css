@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Old+Uyghur&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+  background-color: #fef2f8be;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+}
+
+main {
+  padding-bottom: 5%;
+}
+
+header {
+  font-family: "Playwrite DE Grund", serif;
+  font-size: 15px;
+  background-color: #F5F5F5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+section {
+  padding-top: 5%;
+}
+
+footer {
+  padding-top: 2%;
+  background-color: #F5F5F5;
+  padding-bottom: 2%;
+}
+
+header img {
+  margin: 0 auto;
+  display: block;
+  width: 40%;
+}
+
+a:visited {
+  color: #eca0ccbe;
+}
+
+a:hover {
+  color: red;
+}
+
+a {
+  color: black;
+  text-decoration: solid;
+}
+
+b {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+a {
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
