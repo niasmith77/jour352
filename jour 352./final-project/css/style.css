@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+    width: 45%;
+}
+
+span {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+h1 {
+    font-family: "Prompt", sans-serif;
+    color: #000000;
+}
+
+h2 {
+    color: #000000;
+}
+
+.header {
+    background-color: #fce3e2;
+    padding-bottom: 1em;
+    text-align: center;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Prompt", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+h3 {
+    padding: 30px 0px 30px 0px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+main {
+    padding-top: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
+    font-family: "Sour Gummy", sans-serif;
+    background-color: hsla(0, 0%, 99%, 0.972);
+    font-size: 1.2em;
+}
+
+.container-fluid h3 {
+    text-align: center;
+}
+
+.container-fluid p {
+    padding: 10px 0px 0px 10px;
+    font-size: 1.5em;
+}
+
+.intro{
+    background-color: rgb(249, 241, 251);
+    text-align: center;
+    padding: 40px;
+   
+
+}
+
+h4 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+
+.intro h1 {
+    font-size: 46px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 45%;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(249, 241, 251);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .container{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+  }
+  
+  .left {
+    left: -50%;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    background-color: rgb(249, 241, 251);
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .timeline::after {
+      left: 31px;
+    }
+  
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+
