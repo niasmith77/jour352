@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
+.container-fluid{
+  width: 100%;
+}
+
 .container {
-    width: 45%;
+  width: 45%;
 }
 
 span {
@@ -19,6 +23,7 @@ h1 {
 h2 {
     color: #000000;
 }
+
 
 .header {
     background-color: #fce3e2;
@@ -60,6 +65,8 @@ main {
     font-size: 1.2em;
 }
 
+
+
 .container-fluid h3 {
     text-align: center;
 }
@@ -73,8 +80,6 @@ main {
     background-color: rgb(249, 241, 251);
     text-align: center;
     padding: 40px;
-   
-
 }
 
 h4 {
@@ -86,74 +91,118 @@ h4 {
     font-size: 46px;
 }
 
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 45%;
+#timeline ul {
+  padding: 50px 0;
+}
+
+
+
+#timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: rgb(249, 241, 251);
+}
+
+#timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 1rem;
+  background: rgb(249, 241, 251);
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0.5);
+}
+
+
+#timeline ul li:nth-child(odd) div {
+  left: 40px;
+}
+
+
+
+#timeline ul li:nth-child(even) div {
+  left: -434px;
+}
+
+
+
+#timeline ul li:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  width: 25px;
+  height: 25px;
+  background: rgb(207, 207, 207);
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+
+#timeline div:before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 0;
+  right: 0;
+  border-style: solid;
+}
+
+
+
+#timeline ul li:nth-child(odd) div:before {
+  left: -15px;
+  border-width: 8px 16px 8px 0px;
+  border-color: transparent rgb(249, 241, 251);
+}
+
+
+#timeline ul li:nth-child(even) div:before {
+  right: -15px;
+  border-width: 8px 0px 8px 16px;
+  border-color: transparent rgb(249, 241, 251);
+}
+
+@media(max-width: 900px) {
+
+  #timeline ul li div {
+      width: 350px;
+  }
+
+#timline ul li:nth-child(odd)div {
+  left: 40px;
+}
+
+#timline ul li:nth-child(even)div {
+  left: -380px;
+}
+}
+
+@media(max-width: 768px) {
+
+
+  #timeline ul li {
+      margin-left: 30px;
+  }
+  #timeline ul li div {
+      width: calc(100vw - 90px);
   }
   
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: rgb(249, 241, 251);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  .container{
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 100%;
+  #timeline ul li:nth-child(even) div {
+      left: 40px;
   }
   
-  .left {
-    left: -50%;
-  }
-  
-  .right {
-    left: 50%;
-  }
-  
-  .content {
-    padding: 20px 30px;
-    background-color: rgb(249, 241, 251);
-    position: relative;
-    border-radius: 6px;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .timeline::after {
-      left: 31px;
-    }
-  
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-  /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-  
-  /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-      left: 15px;
-    }
-  
-  /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
-    }
-  }
+  #timeline ul li:nth-child(even) div:before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent;
+}
+
+}
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
     height: 100px;
